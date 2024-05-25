@@ -1,0 +1,41 @@
+Exercise 1 (1 checkoff point)
+[Note: This is a pencil-and-paper exercise: DEN students should put their answers in the file README.lab5 in the Lab 5 workspace.
+On-campus students should just write the answers in their lab notebook.]
+For each of the following example of books on a shelf managed by a BookshelfKeeper,
+write down the minimum number of necessary calls to bookshelf mutator methods (addFront, addLast, removeFront, or removeLast)
+on that bookshelf to do the operation shown, and also show the updated bookshelf:
+
+bookshelf: [1, 3, 4, 8, 11, 14, 15, 18]
+operation: putHeight(13)
+removeLast x 3
+addLast(13)
+addLast(14)
+addLast(15)
+addLast(18)
+total 7 operations
+
+
+bookshelf: [1, 3, 4, 8, 11, 14, 15, 18]
+operation: pickPos(2)
+RemoveFront x 3
+addFront(3)
+addFront(1)
+total 5 operations
+
+
+Exercise 2 (1 checkoff point)
+Write a BookshelfTester.java program that uses hard-coded data to test the following subset of your Bookshelf class:
+the two constructors plus the toString method. Demonstrate to the TA that these methods work, including explaining your tests.
+
+      //creating an empty Bookshelf object
+      Bookshelf bookshelfTestOne = new Bookshelf();
+      System.out.println("should print out []");
+      System.out.println(bookshelfTestOne);
+
+      //createing a Bookshelf object with an ArrayList
+      ArrayList<Integer> pileOfBooks = new ArrayList<>(Arrays.asList(25,37,16,10,1,2,3));
+      Bookshelf bookshelfTestTwo = new Bookshelf(pileOfBooks);
+      System.out.println("should print out [25, 37, 16, 10, 1, 2, 3]");
+      System.out.println(bookshelfTestTwo);
+
+
